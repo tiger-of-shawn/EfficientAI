@@ -1,10 +1,78 @@
-EfficientAI is an open-source research project from Alibaba Cloud dedicated to efficient LLM/MLLM inference. It focuses on inference-time optimizations such as sparsity, quantization, and efficient agentic reasoning, providing reproducible implementations and benchmarks for both research and production.
+# 🚀 EfficientAI
 
-<!-- ![efficient ai](./images/banner_2.png) -->
-<img src="./images/banner_2.png" alt="" width="300" style="display: block; margin: 0 auto;">
+> **Efficient Inference for LLMs & MLLMs**  
+> An open-source research project from Alibaba Cloud dedicated to efficient large language model inference.
 
+<p align="center">
+  <img src="./images/banner_2.png" alt="EfficientAI Banner" width="600" style="max-width: 100%; height: auto;">
+</p>
 
-### Updates
-- [2026-01]: Our LLM activation sparsity method **LaRoSa** has been accepted to ICML 2025. [https://arxiv.org/abs/2507.01299](https://arxiv.org/abs/2507.01299)
-- [2026-02]: Our efficient tool use reasoning method **D-CORE** has been open sourced. [https://arxiv.org/abs/2602.02160](https://arxiv.org/abs/2602.02160)
-- [2026-03]: Our Multimodal Large Language Models PTQ algorithm **MASQuant** has been accepted to CVPR 2026. [https://arxiv.org/abs/2603.04800](https://arxiv.org/abs/2603.04800)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"></a>
+  <a href="https://arxiv.org/search/EfficientAI"><img src="https://img.shields.io/badge/Papers-3-green" alt="Papers"></a>
+  <a href="https://github.com/alibaba/EfficientAI/stargazers"><img src="https://img.shields.io/github/stars/alibaba/EfficientAI?style=social" alt="Stars"></a>
+  <a href="https://github.com/alibaba/EfficientAI/issues"><img src="https://img.shields.io/github/issues/alibaba/EfficientAI" alt="Issues"></a>
+</p>
+
+---
+
+## 📋 Table of Contents
+- [✨ Key Features](#-key-features)
+- [🔥 Latest Updates](#-latest-updates)
+- [📦 Installation](#-installation)
+- [⚡ Quick Start](#-quick-start)
+- [🧪 Benchmarks](#-benchmarks)
+- [📚 Publications](#-publications)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [✉️ Contact](#-contact)
+
+---
+
+## ✨ Key Features
+
+EfficientAI focuses on **inference-time optimizations** for LLMs and MLLMs:
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| 🔹 **Activation Sparsity** | Dynamic sparsity methods for faster inference | ✅ LaRoSa (ICML 2025) |
+| 🔹 **Quantization** | Post-training & quantization-aware techniques for MLLMs | ✅ MASQuant (CVPR 2026) |
+| 🔹 **Agentic Reasoning** | Efficient tool-use and reasoning frameworks | ✅ D-CORE |
+| 🔹 **Reproducible Benchmarks** | Standardized eval pipelines for research & production | 🔄 In Progress |
+
+---
+
+## 🔥 Latest Updates
+
+<details open>
+<summary><b>📰 Changelog (Click to expand)</b></summary>
+
+- **[2026-03]** 🎉 **MASQuant** accepted to **CVPR 2026**  
+  → Multimodal LLM PTQ algorithm with SOTA accuracy-efficiency tradeoff  
+  [📄 Paper](https://arxiv.org/abs/2603.04800) | [💻 Code](./masquant/)
+
+- **[2026-02]** 🚀 **D-CORE** open-sourced  
+  → Efficient tool-use reasoning via dynamic computation routing  
+  [📄 Paper](https://arxiv.org/abs/2602.02160) | [💻 Code](./dcore/) | [🎮 Demo](#)
+
+- **[2026-01]** 🏆 **LaRoSa** accepted to **ICML 2025**  
+  → Training-free activation sparsity for LLM acceleration  
+  [📄 Paper](https://arxiv.org/abs/2507.01299) | [💻 Code](./larosa/)
+
+</details>
+
+---
+
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/alibaba/EfficientAI.git
+cd EfficientAI
+
+# Install dependencies (recommended: use conda)
+pip install -r requirements.txt
+
+# Optional: Install with specific module support
+# pip install -e ".[larosa]"   # for LaRoSa
+# pip install -e ".[masquant]" # for MASQuant
