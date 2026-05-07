@@ -37,7 +37,7 @@ EfficientAI focuses on **inference-time optimizations** for LLMs and MLLMs:
 |---------|-------------|--------|
 | 🔹 **Activation Sparsity** | Dynamic sparsity methods for faster inference | ✅ LaRoSa (ICML 2025) |
 | 🔹 **Quantization** | Post-training & quantization-aware techniques for MLLMs | ✅ MASQuant (CVPR 2026) |
-| 🔹 **Agentic Reasoning** | Efficient tool-use and reasoning frameworks | ✅ D-CORE |
+| 🔹 **Agentic Reasoning** | Efficient tool-use and reasoning frameworks | ✅ D-CORE ( ICML 2026) |
 | 🔹 **Reproducible Benchmarks** | Standardized eval pipelines for research & production | 🔄 In Progress |
 
 ---
@@ -47,13 +47,14 @@ EfficientAI focuses on **inference-time optimizations** for LLMs and MLLMs:
 <details open>
 <summary><b>📰 Changelog (Click to expand)</b></summary>
 
+- **[2026-05]** 🚀 **D-CORE** accepted to **ICML 2026**
+  → Efficient tool-use reasoning via dynamic computation routing  
+  [📄 Paper](https://arxiv.org/abs/2602.02160) | [💻 Code](./dcore/) | [🎮 Demo](#)
+
 - **[2026-03]** 🎉 **MASQuant** accepted to **CVPR 2026**  
   → Multimodal LLM PTQ algorithm with SOTA accuracy-efficiency tradeoff  
   [📄 Paper](https://arxiv.org/abs/2603.04800) | [💻 Code](./masquant/)
 
-- **[2026-02]** 🚀 **D-CORE** open-sourced  
-  → Efficient tool-use reasoning via dynamic computation routing  
-  [📄 Paper](https://arxiv.org/abs/2602.02160) | [💻 Code](./dcore/) | [🎮 Demo](#)
 
 - **[2026-01]** 🏆 **LaRoSa** accepted to **ICML 2025**  
   → Training-free activation sparsity for LLM acceleration  
